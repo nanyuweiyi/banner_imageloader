@@ -1,4 +1,4 @@
-package com.smartstudy.zhike.banner.bean.homebanner;
+package com.smartstudy.zhike.mylibrary.homebanner;
 
 
 import java.io.Serializable;

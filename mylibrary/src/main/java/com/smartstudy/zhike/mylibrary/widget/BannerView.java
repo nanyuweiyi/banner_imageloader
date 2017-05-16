@@ -1,4 +1,4 @@
-package com.smartstudy.zhike.banner.widget;
+package com.smartstudy.zhike.mylibrary.widget;
 
 import android.content.Context;
 import android.os.Handler;
@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.smartstudy.zhike.banner.R;
+import com.smartstudy.zhike.mylibrary.R;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.smartstudy.zhike.banner.widget;
+package com.smartstudy.zhike.mylibrary.widget;
 
 import android.database.DataSetObserver;
 import android.os.Parcelable;

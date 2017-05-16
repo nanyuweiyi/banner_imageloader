@@ -1,4 +1,4 @@
-package com.smartstudy.zhike.banner.widget;
+package com.smartstudy.zhike.mylibrary.widget;
 /**
  *
  */

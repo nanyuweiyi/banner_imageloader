@@ -1,4 +1,4 @@
-package com.smartstudy.zhike.banner;
+package com.smartstudy.zhike.mylibrary;
 
 import android.graphics.Bitmap;
 

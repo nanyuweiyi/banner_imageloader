@@ -1,4 +1,4 @@
-package com.smartstudy.zhike.banner.widget;
+package com.smartstudy.zhike.mylibrary.widget;
 
 import android.support.v4.view.ViewPager;
 import android.widget.ImageView;

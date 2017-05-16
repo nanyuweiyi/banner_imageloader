@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.smartstudy.zhike.banner.widget;
+package com.smartstudy.zhike.mylibrary.widget;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
