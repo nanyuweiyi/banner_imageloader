@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.smartstudy.zhike.banner.ImageOption;
-import com.smartstudy.zhike.banner.R;
-import com.smartstudy.zhike.banner.bean.homebanner.HomeBannerDataBean;
+import com.smartstudy.zhike.mylibrary.ImageOption;
+import com.smartstudy.zhike.mylibrary.R;
+import com.smartstudy.zhike.mylibrary.homebanner.HomeBannerDataBean;
 
 /**
  * Created by tnn on 2017/05/16
