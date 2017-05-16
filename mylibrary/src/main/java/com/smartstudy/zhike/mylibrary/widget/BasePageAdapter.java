@@ -12,17 +12,15 @@ import java.util.List;
 
 public class BasePageAdapter<T> extends RecyclePagerAdapter {
     protected List<T> mDatas;
-    protected ViewHolderCreator holderCreator;
 
-    public BasePageAdapter(ViewHolderCreator holderCreator, List<T> datas) {
-        this.holderCreator = holderCreator;
+    public BasePageAdapter(List<T> datas) {
         this.mDatas = datas;
     }
 
     public View getView(int position, View view, ViewGroup container) {
         Holder holder = null;
         if (view == null) {
-            holder = (Holder) holderCreator.createHolder();
+            holder = holder.createHolder();
             view = holder.createView(container.getContext());
             view.setTag(holder);
         } else {
@@ -45,5 +43,6 @@ public class BasePageAdapter<T> extends RecyclePagerAdapter {
     public interface Holder<T>{
         View createView(Context context);
         void UpdateUI(Context context, int position, T data);
+        Holder createHolder();
     }
 }
