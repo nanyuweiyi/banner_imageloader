@@ -25,9 +25,10 @@ import java.util.List;
  * @author Sai 支持自动翻页
  */
 public class BannerView<T> extends LinearLayout {
+    private ViewHolderCreator holderCreator;
     private List<T> mDatas;
     private int[] page_indicatorId;
-    private ArrayList<ImageView> mPointViews = new ArrayList<ImageView>();
+    private ArrayList<ImageView> mPointViews = new ArrayList<>();
     private PageChangeListener pageChangeListener;
     private ViewPager.OnPageChangeListener onPageChangeListener;
     private BasePageAdapter pageAdapter;
@@ -70,9 +71,10 @@ public class BannerView<T> extends LinearLayout {
         initViewPagerScroll();
     }
 
-    public BannerView setPages(List<T> datas){
+    public BannerView setPages(ViewHolderCreator holderCreator,List<T> datas){
         this.mDatas = datas;
-        pageAdapter = new BasePageAdapter(mDatas);
+        this.holderCreator = holderCreator;
+        pageAdapter = new BasePageAdapter(holderCreator,mDatas);
         viewPager.setAdapter(pageAdapter);
         viewPager.setBoundaryCaching(true);
 
