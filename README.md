@@ -9,7 +9,7 @@ Banner轮播图
 
 3、添加该类
 
-public class ImageHolderView implements BasePageAdapter.Holder<HomeBannerDataBean>{
+ public class ImageHolderView implements BasePageAdapter.Holder<HomeBannerDataBean>{
 
     private ImageView imageView;
     private Context mContext;
@@ -46,9 +46,6 @@ public class ImageHolderView implements BasePageAdapter.Holder<HomeBannerDataBea
 
 4、代码引用：
 
-   
-      \\初始化imgloader
-     
     public void initImageLoaderCache() {
         File cacheDir = StorageUtils.getOwnCacheDirectory(
                 getApplicationContext(), "ImageLoader/Cache");
@@ -66,8 +63,7 @@ public class ImageHolderView implements BasePageAdapter.Holder<HomeBannerDataBea
         ImageLoader.getInstance().init(config);
     }
 
-void processBanner(List<HomeBannerDataBean> banners) {
-
+    void processBanner(List<HomeBannerDataBean> banners) {
         bannerView.setPages(viewHolderCreator, banners);
         int[] inditcators = new int[]{R.mipmap.circle_indicator_stroke, R.mipmap.circle_indicator_solid};
         if (banners.size() != 1) {
