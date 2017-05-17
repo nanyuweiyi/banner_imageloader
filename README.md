@@ -3,7 +3,9 @@ Banner轮播图
 
 1、在项目build.gradle里添加：maven { url 'https://www.jitpack.io' }
 
-2、在工程build.gradeli里直接引用：compile 'com.github.nanyuweiyi:banner:v1.0.8',别忘了引用图片加载库：compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+2、在工程build.gradeli里直接引用：compile 'com.github.nanyuweiyi:banner:v1.0.8'
+
+   别忘了引用图片加载库：compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
 3、添加该类
 
