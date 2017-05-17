@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import java.util.List;
 
 /**
- * Created by weijungang on 15/11/15.
+ * Created by tnn on 17/5/17.
+ * email:nanyuweiyi@126.com
  */
 
 public class BasePageAdapter<T> extends RecyclePagerAdapter {
