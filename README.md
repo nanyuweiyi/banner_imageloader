@@ -46,6 +46,26 @@ public class ImageHolderView implements BasePageAdapter.Holder<HomeBannerDataBea
 
 4、代码引用：
 
+   
+      \\初始化imgloader
+     
+    public void initImageLoaderCache() {
+        File cacheDir = StorageUtils.getOwnCacheDirectory(
+                getApplicationContext(), "ImageLoader/Cache");
+
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+                getApplicationContext())
+                .memoryCacheExtraOptions(720, 1280)
+                .diskCacheExtraOptions(720, 1280, null)
+                .memoryCache(new WeakMemoryCache())
+                .diskCache(new UnlimitedDiskCache(cacheDir))
+                .diskCacheFileNameGenerator(new HashCodeFileNameGenerator())
+                .imageDownloader(new BaseImageDownloader(getApplicationContext())) 
+                .defaultDisplayImageOptions(DisplayImageOptions.createSimple())
+                .build();
+        ImageLoader.getInstance().init(config);
+    }
+
 void processBanner(List<HomeBannerDataBean> banners) {
 
         bannerView.setPages(viewHolderCreator, banners);
